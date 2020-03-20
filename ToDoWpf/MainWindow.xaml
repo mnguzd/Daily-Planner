@@ -84,7 +84,6 @@
                 </Border.Effect>
                 <Grid HorizontalAlignment="Stretch" x:Name="ItemGrid" Background="Transparent">
                 <Grid.ColumnDefinitions>
-                    <!--<ColumnDefinition Width="0.2*" MaxWidth="80"/>-->
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="30"/>
                     <ColumnDefinition Width="30"/>
@@ -93,10 +92,6 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="3"/>
                 </Grid.RowDefinitions>
-                <!--<Grid Background="Transparent" Grid.Column="0" Grid.Row="0"   MouseLeftButtonDown="Control_MouseLeftButtonDown">
-                    <TextBlock x:Name="TextDate" Text="{Binding Time}" VerticalAlignment="Center" 
-                           HorizontalAlignment="Center"  MinWidth="30" />
-                </Grid>-->
                 <Grid x:Name="TextGrid" Grid.Row="0" Grid.Column="0"  MouseLeftButtonDown="Control_MouseLeftButtonDown" Grid.ColumnSpan="3" Background="Transparent" Margin="5 0 0 0">
                     <TextBlock x:Name="TextToDo" Text="{Binding ToDo}"  VerticalAlignment="Center" 
                       HorizontalAlignment="Left" Background="Transparent" />
@@ -166,7 +161,6 @@
                     <Setter TargetName="DoneLine2" Property="Line.Y1" Value="18"/>
                 </Trigger>
             </ControlTemplate.Triggers>
-            
         </ControlTemplate>
         <Style TargetType="{x:Type ListViewItem}">
             <Setter Property="Template">
@@ -182,11 +176,9 @@
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
-                    
                 </Setter.Value>
             </Setter>
         </Style>
-        
     </Window.Resources>
     <Border BorderBrush="Transparent" BorderThickness="1" CornerRadius="4 4 4 4">
         <Border.Background>
